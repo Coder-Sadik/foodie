@@ -1,2 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
 
+.text-regular {
+	font-size: 16px;
+	font-weight: 400;
+}
+.text-mini {
+	font-size: 14px;
+	font-weight: 500;
+}
+.text-large {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+}
