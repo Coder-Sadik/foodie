@@ -4,7 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="reset.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -29,7 +28,7 @@
 			</div>
 		</nav>
 		<!-- hero section  -->
-		<header class="hero-container px-130">
+		<header class="hero-container px-130" id="home">
 			<div class="hero-left">
 				<h1 class="h1">We're Serious For Food</h1>
 				<p class="text-regular">
@@ -50,7 +49,7 @@
 			</div>
 		</header>
 		<!-- services section  -->
-		<div class="services mx-130">
+		<div class="services mx-130" id="about">
 			<div class="service">
 				<img src="./Images/features/delivery-icon.png" alt="icon wallet" />
 				<div class="service-text">
@@ -89,7 +88,7 @@
 				<div class="benefit-header rel">
 					<p class="text-mini">Our Benefit</p>
 					<img src="./Images/Polcadot.png" alt="polocadot" />
-					<h2 class="dots">The More Healthy Food The Better</h2>
+					<h2 class="h2 dots">The More Healthy Food The Better</h2>
 				</div>
 				<div class="benefit-list">
 					<ul>
@@ -103,7 +102,7 @@
 			</div>
 		</div>
 		<!-- stats section  -->
-		<div class="stat-container mx-130">
+		<div class="stat-container mx-130" id="services">
 			<div class="stats-left">
 				<div class="stat-header rel">
 					<p class="text-mini">Our Stars</p>
@@ -131,7 +130,7 @@
 			</div>
 		</div>
 		<!-- feature section  -->
-		<div class="feature-section mx-130">
+		<div class="feature-section mx-130" id="company">
 			<p class="text-mini">Our Features</p>
 			<h2 class="h2">Variety Of Foods</h2>
 			<div class="feature-container">
@@ -229,7 +228,7 @@
 			</div>
 		</div>
 		<!-- footer banner  -->
-		<div class="footer-banner rel">
+		<div class="footer-banner rel" id="pages">
 			<img src="./Images/veggie-food-banner.png" alt="vegetables banner" />
 			<div class="banner-text">
 				<h2>
@@ -239,12 +238,48 @@
 				<button class="btn">Get Started</button>
 			</div>
 		</div>
-		<footer class="footer">
-			<h2 class="logo">Foodies</h2>
-			<p class="text-large">
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
-				accusantium placeat voluptatibus illo.
-			</p>
+		<footer class="footer mx-130 rel">
+			<div class="foodies footer-div">
+				<h3 class="logo">Foodies</h3>
+				<p class="text-large">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+					accusantium placeat voluptatibus illo.
+				</p>
+				<div class="social-links">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+				</div>
+			</div>
+			<div class="about footer-div">
+				<h3>About Us</h3>
+				<a href="#">About Us</a>
+				<a href="#">Service Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Company</a>
+			</div>
+			<div class="compnay footer-div">
+				<h3>Company</h3>
+				<a href="#">Partnership</a>
+				<a href="#">Terms Of Use</a>
+				<a href="#">Privacy</a>
+				<a href="#">Sitemap</a>
+			</div>
+			<div class="get-in-touch footer-div">
+				<h3>Get in touch</h3>
+				<p class="text-mini">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur
+					velit qui obcaeca.
+				</p>
+				<div class="email">
+					<input type="email" placeholder="Email" />
+					<button class="btn-subscribe">Subscribe</button>
+				</div>
+			</div>
+			<div class="copyright">
+				<p class="text-mini">Copyright 	&#169 2024 Foodies </p>
+			</div>
 		</footer>
+		<script src="script.js"></script>
 	</body>
 </html>

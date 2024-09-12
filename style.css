@@ -1,5 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap");
+/* reset start  */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 
+* {
+	margin: 0;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* reset end  */
 :root {
 	--green: #06c167;
 	--black: #1d1d1f;
@@ -362,3 +410,73 @@ ul li::before {
 }
 
 /* footer  */
+.footer-div {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	gap: 16px;
+}
+.footer h3 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 29.05px;
+	text-align: left;
+	margin-bottom: 41px;
+}
+.footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.foodies {
+	grid-area: foodies;
+}
+.about {
+	grid-area: about;
+}
+.company {
+	grid-area: company;
+}
+.get-in-touch {
+	grid-area: get-in-touch;
+}
+.copyright {
+	grid-area: copyright;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(150px, 1fr));
+
+	grid-template-areas: "	foodies	foodies	about company get-in-touch get-in-touch	";
+}
+
+.copyright {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: -100px;
+}
+
+.social-links a {
+	padding-right: 20px;
+	font-size: 24px;
+}
+
+.email input {
+	height: 50px;
+	background-color: rgba(240, 241, 236, 1);
+	border: none;
+	padding: 20px;
+}
+
+.btn-subscribe {
+	border: none;
+	background-color: var(--green);
+	color: white;
+	height: 50px;
+	cursor: pointer;
+}
+.btn-subscribe:hover {
+	opacity: 0.7;
+}
