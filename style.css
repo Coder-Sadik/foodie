@@ -170,7 +170,7 @@ body {
 	padding: 0px 48px 95px;
 }
 
-h2 {
+.h2 {
 	font-size: 60px;
 	font-weight: 500;
 	line-height: 72.61px;
@@ -212,3 +212,153 @@ ul li::before {
 	top: 0;
 	color: #06c167;
 }
+
+/* stats section  */
+.stat-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.stat-left {
+	max-width: 550px;
+}
+
+.stat-header img {
+	position: absolute;
+	left: -55px;
+	top: 55px;
+	z-index: -1;
+}
+.stats {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 65px;
+}
+.stat-number {
+	font-family: Inter;
+	font-size: 40px;
+	font-weight: 600;
+	line-height: 48.41px;
+	text-align: left;
+	color: var(--green);
+}
+.stat p:last-child {
+	color: rgba(29, 29, 31, 0.5);
+}
+
+/* .stat-container img {
+	position: absolute;
+	right: 0;
+} */
+
+.feature-section {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.feature-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	max-width: fit-content;
+	margin: auto;
+	margin-top: 40px;
+}
+.feature {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	outline: 2px solid var(--green);
+}
+.feature-details {
+	background-color: rgba(243, 250, 251, 1);
+	width: 292px;
+	height: 292px;
+	padding: 40px;
+}
+.feature-details * {
+	margin-top: 20px;
+}
+.feature-title {
+	font-size: 32px;
+	font-weight: 500;
+	line-height: 38.73px;
+}
+.btn-small {
+	background-color: rgba(230, 249, 240, 1);
+	color: var(--green);
+	gap: 0px;
+	opacity: 0px;
+	font-size: 15px;
+	width: 148px;
+	height: 42px;
+}
+.btn-small:hover {
+	color: white;
+}
+
+/* popular products */
+.popular-products {
+	text-align: center;
+}
+.popular-products h2 {
+	margin: auto;
+	margin-bottom: 64px;
+}
+.product-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.prev-price {
+	text-decoration: line-through;
+	padding-right: 10px;
+}
+.current-price {
+	color: var(--green);
+	font-weight: 900;
+}
+
+.btn-unfilled {
+	background-color: white;
+	color: var(--green);
+	border: 2px solid var(--green);
+}
+.btn-unfilled:hover {
+	color: white;
+}
+.product * {
+	margin: 10px auto;
+}
+
+.product p:first-child {
+	color: black;
+}
+.product {
+	border: 2px solid var(--green);
+	padding: 20px;
+}
+/* footer banner  */
+.footer-banner img {
+	margin: auto;
+}
+.footer-banner h2 {
+	color: white;
+	font-size: 60px;
+	line-height: 72.61px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.footer-banner .banner-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 100px;
+	width: 100%;
+}
+
+/* footer  */
